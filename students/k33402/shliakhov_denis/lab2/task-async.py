@@ -32,8 +32,12 @@ async def worker(urls, cursor, conn):
 
 
 async def main():
-    urls = ["https://www.americantop40.com/charts/top-40-238/september-28-2024/"]
-    num_tasks = 1
+    urls = [
+        "https://www.americantop40.com/charts/top-40-238/september-28-2024/",
+        "https://www.americantop40.com/charts/top-40-238/august-17-2024/",
+        "https://www.americantop40.com/charts/top-40-238/july-13-2024/"
+    ]
+    num_tasks = 3
     try:
         conn = sqlite3.connect('top.db')
         cursor = conn.cursor()

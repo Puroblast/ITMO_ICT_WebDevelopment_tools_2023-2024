@@ -28,7 +28,11 @@ def worker(urls):
 
 
 def main():
-    urls = ["https://www.americantop40.com/charts/top-40-238/september-28-2024/"]
+    urls = [
+        "https://www.americantop40.com/charts/top-40-238/september-28-2024/",
+        "https://www.americantop40.com/charts/top-40-238/august-17-2024/",
+        "https://www.americantop40.com/charts/top-40-238/july-13-2024/"
+    ]
     num_threads = 3
 
     conn = sqlite3.connect('top.db')

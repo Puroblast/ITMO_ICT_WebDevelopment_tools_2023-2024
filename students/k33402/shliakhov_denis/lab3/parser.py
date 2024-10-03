@@ -63,7 +63,3 @@ async def main_start():
         print(f"Parsed and saved data in {end_time - start_time} seconds")
     except Exception as e:
         print(f"Unexpected error: {e}")
-
-
-if __name__ == "__main__":
-    asyncio.run(main_start())
